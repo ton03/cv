@@ -63,7 +63,7 @@ Front End Engineer with expertise in design systems, component libraries, and de
 // ─── Experience ───
 == Experience
 
-#entry("Software Engineer, Square Web Platform", "Block (Square)", "Toronto, ON", "YEAR – Present") // TODO: update start date
+#entry("Staff Software Engineer, Square Web Platform", "Block (Square)", "Toronto, ON", "YEAR – Present") // TODO: update start date
 - Own and develop Market React, Square's React design system library used across all seller-facing web products in the square-web monorepo
 - Led the migration from Stencil Web Components to React, building accessible wrappers with full ARIA support, keyboard navigation, and WCAG 2.1 AA compliance
 - Executed a monorepo-wide icon migration, deprecating legacy shared-ui Icon components and standardizing on MarketIcon across 15+ product domains
@@ -99,29 +99,6 @@ Front End Engineer with expertise in design systems, component libraries, and de
   [*Infrastructure*], [Nx monorepo, Webpack, Vite, ESLint, GraphQL codegen, CI/CD],
   [*Practices*], [Accessibility (WCAG 2.1 AA), Responsive design, Visual regression testing, Code review],
 )
-
-// ─── Projects ───
-== Projects
-
-#entry("Market React", "Block (Square)", none, "Production")
-- React design system library wrapping Market Web Components with idiomatic React APIs
-- Ensures accessibility compliance, keyboard navigation, and cross-browser consistency
-
-#v(4pt)
-
-#entry("CentRO", "Open Source", none, link("https://github.com/ton03/CentRO")[github.com/ton03/CentRO])
-- Contributed 11,000+ changes to rAthena, an open-source cross-platform MMORPG server
-- Maintained FluxCP, a web-based control panel for game server management
-
-#v(4pt)
-
-#entry("react-tsx-boilerplate", "Open Source", none, link("https://github.com/ton03/react-tsx-boilerplate")[github.com/ton03/react-tsx-boilerplate])
-- Minimal, production-ready boilerplate for React + TypeScript + Webpack projects
-
-#v(4pt)
-
-#entry("stencil-eslint", "Open Source", none, link("https://github.com/nicknisi/stencil-eslint")[github.com/stencil-eslint])
-- ESLint rules specific to Stencil JS projects for enforcing web component best practices
 
 // ─── Education ───
 == Education
