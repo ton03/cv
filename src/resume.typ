@@ -1,61 +1,49 @@
 // ─── Page & Font Setup ───
-#set page(paper: "us-letter", margin: (x: 1.8cm, y: 1.6cm))
-#set text(font: "New Computer Modern", size: 10pt, fill: rgb("#2d2d2d"))
-#set par(justify: true, leading: 0.65em)
+#set page(paper: "us-letter", margin: (x: 1.6cm, y: 1.4cm))
+#set text(font: "Helvetica Neue", size: 9.5pt, fill: rgb("#333"))
+#set par(leading: 0.65em)
+#let accent = rgb("#4a7c91")
 
 // ─── Heading Styles ───
-#show heading.where(level: 1): it => {
-  set text(size: 22pt, weight: "bold", fill: rgb("#1a1a1a"))
-  it.body
-  v(-4pt)
-  line(length: 100%, stroke: 0.8pt + rgb("#555"))
-  v(2pt)
-}
-
 #show heading.where(level: 2): it => {
-  v(6pt)
-  set text(size: 11pt, weight: "bold", fill: rgb("#333"), tracking: 0.08em)
-  upper(it.body)
-  v(-4pt)
-  line(length: 100%, stroke: 0.4pt + rgb("#ccc"))
-  v(2pt)
+  v(8pt)
+  text(size: 10pt, weight: "bold", fill: accent, tracking: 0.06em)[#upper(it.body)]
+  v(-2pt)
+  line(length: 100%, stroke: 0.5pt + rgb("#ddd"))
+  v(3pt)
 }
 
 // ─── Helper Functions ───
-#let contact-item(body) = {
-  box(body)
-}
-
 #let entry(title, org, location, dates) = {
   grid(
     columns: (1fr, auto),
     gutter: 4pt,
-    [*#title* #h(6pt) #text(fill: rgb("#555"))[#org]],
-    text(fill: rgb("#666"), size: 9pt)[#dates],
+    [*#title* #h(4pt) #text(fill: rgb("#666"))[#org]],
+    text(fill: rgb("#888"), size: 9pt)[#dates],
   )
   if location != none {
-    text(fill: rgb("#777"), size: 9pt)[#location]
+    text(fill: rgb("#999"), size: 8.5pt)[#location]
   }
 }
 
 // ─── Header ───
 #align(center)[
-  #text(size: 26pt, weight: "bold", tracking: 0.04em)[Antonn Esquivel]
-  #v(-2pt)
-  #text(size: 11pt, fill: rgb("#555"))[Front End Engineer · Design Systems]
-  #v(4pt)
-  #text(size: 9pt, fill: rgb("#666"))[
-    #contact-item[Toronto, ON]
-    #h(8pt) | #h(8pt)
-    #contact-item[#link("mailto:tonn.esq@gmail.com")[tonn.esq\@gmail.com]]
-    #h(8pt) | #h(8pt)
-    #contact-item[#link("https://linkedin.com/in/antonn-esquivel")[linkedin.com/in/antonn-esquivel]]
-    #h(8pt) | #h(8pt)
-    #contact-item[#link("https://github.com/ton03")[github.com/ton03]]
+  #text(size: 24pt, weight: "bold", fill: rgb("#222"), tracking: 0.02em)[Antonn Esquivel]
+  #v(-1pt)
+  #text(size: 10.5pt, fill: rgb("#666"))[Front End Engineer · Design Systems]
+  #v(5pt)
+  #text(size: 8.5pt, fill: rgb("#888"))[
+    Toronto, ON
+    #h(6pt) · #h(6pt)
+    #link("mailto:tonn.esq@gmail.com")[tonn.esq\@gmail.com]
+    #h(6pt) · #h(6pt)
+    #link("https://linkedin.com/in/antonn-esquivel")[linkedin.com/in/antonn-esquivel]
+    #h(6pt) · #h(6pt)
+    #link("https://github.com/ton03")[github.com/ton03]
   ]
 ]
 
-#v(4pt)
+#v(2pt)
 
 // ─── Summary ───
 == Summary
