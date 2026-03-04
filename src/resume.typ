@@ -47,6 +47,8 @@
   #text(size: 9pt, fill: rgb("#666"))[
     #contact-item[Toronto, ON]
     #h(8pt) | #h(8pt)
+    #contact-item[#link("mailto:tonn.esq@gmail.com")[tonn.esq\@gmail.com]]
+    #h(8pt) | #h(8pt)
     #contact-item[#link("https://linkedin.com/in/antonn-esquivel")[linkedin.com/in/antonn-esquivel]]
     #h(8pt) | #h(8pt)
     #contact-item[#link("https://github.com/ton03")[github.com/ton03]]
@@ -63,29 +65,38 @@ Front End Engineer with expertise in design systems, component libraries, and de
 // ─── Experience ───
 == Experience
 
-#entry("Staff Software Engineer, Square Web Platform", "Block (Square)", "Toronto, ON", "YEAR – Present") // TODO: update start date
-- Own and develop Market React, Square's React design system library used across all seller-facing web products in the square-web monorepo
-- Led the migration from Stencil Web Components to React, building accessible wrappers with full ARIA support, keyboard navigation, and WCAG 2.1 AA compliance
-- Executed a monorepo-wide icon migration, deprecating legacy shared-ui Icon components and standardizing on MarketIcon across 15+ product domains
-- Introduced Vitest browser mode testing infrastructure for layout-dependent component tests, improving test reliability over JSDOM
-- Built developer tooling including CSS module type declaration generation with CI freshness checks, and authored AI-assisted development rules to accelerate contributor onboarding
-- Maintained comprehensive Storybook documentation with interactive guides, API references, and Chromatic visual regression testing
-- Cleaned up deprecated Storybook packages and test infrastructure, reducing CI overhead
+#entry("Staff Software Engineer", "Block (Square)", "Toronto, ON · Remote", "Oct 2021 – Present")
+- Own and develop Market, Square's design system — building the React component library used across all seller-facing web products
+- Led the migration from Stencil Web Components to React, with full ARIA support, keyboard navigation, and WCAG 2.1 AA compliance
+- Executed a monorepo-wide icon migration, standardizing on MarketIcon across 15+ product domains
+- Introduced Vitest browser mode testing and Chromatic visual regression testing for reliable component validation
+- Built developer tooling including CSS module type declaration generation with CI freshness checks
+- Maintained comprehensive Storybook documentation with interactive guides and API references
 
 #v(4pt)
 
-// TODO: add previous roles — update company, title, dates, and bullet points
-#entry("Front End Developer", "Company Name", "City", "YEAR – YEAR")
-- Built responsive web applications with React, TypeScript, and modern CSS
-- Collaborated with designers to implement pixel-perfect UIs from Figma mockups
-- Contributed to CI/CD pipeline improvements and code review processes
+#entry("Front End Engineer", "AspireIQ", "Greater Toronto Area, Canada", "Sep 2019 – Oct 2021")
+TypeScript, React, SASS, Apollo GraphQL, Python
 
 #v(4pt)
 
-#entry("Web Developer", "Company Name", "City", "YEAR – YEAR")
-- Developed and maintained full-stack web applications
-- Worked with HTML, CSS, JavaScript, and Python
-- Built internal tools and automated workflows
+#entry("Front End Web Engineer", "Iress", "Melbourne, Australia", "Oct 2017 – Aug 2019")
+TypeScript, React, Redux, Aurelia, SASS, UI Design
+
+#v(4pt)
+
+#entry("Front End Web Engineer", "Iress", "Greater Sydney Area, Australia", "Aug 2016 – Oct 2017")
+TypeScript, React, Redux, SASS
+
+#v(4pt)
+
+#entry("iOS Engineer", "ZipMatch", "Taguig, Philippines", "Nov 2015 – Apr 2016")
+Designed and developed the ZipMatch Pro app
+
+#v(4pt)
+
+#entry("Software Engineer", "Nokia Networks", "Philippines", "Jul 2013 – Oct 2015")
+Full Stack Web Engineer; R&D Software Engineer
 
 // ─── Skills ───
 == Skills
@@ -103,5 +114,4 @@ Front End Engineer with expertise in design systems, component libraries, and de
 // ─── Education ───
 == Education
 
-// TODO: update with your degree, school, and dates
-#entry("Degree", "University Name", "City", "Year – Year")
+#entry("BS Computer Science", "De La Salle University", "Manila, Philippines", "2013")
