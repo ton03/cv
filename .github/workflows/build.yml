@@ -1,0 +1,26 @@
+name: Build & Deploy Resume
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/**']
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v4
+
+      - name: Compile resume
+        run: typst compile src/resume.typ docs/resume.pdf
+
+      - name: Commit updated PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'build: update resume pdf'
+          file_pattern: docs/resume.pdf
