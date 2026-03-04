@@ -66,12 +66,15 @@ Front End Engineer with expertise in design systems, component libraries, and de
 == Experience
 
 #entry("Staff Software Engineer", "Block (Square)", "Toronto, ON · Remote", "Oct 2021 – Present")
-- Own and develop Market, Square's design system — building the React component library used across all seller-facing web products
-- Led the migration from Stencil Web Components to React, with full ARIA support, keyboard navigation, and WCAG 2.1 AA compliance
-- Executed a monorepo-wide icon migration, standardizing on MarketIcon across 15+ product domains
-- Introduced Vitest browser mode testing and Chromatic visual regression testing for reliable component validation
-- Built developer tooling including CSS module type declaration generation with CI freshness checks
-- Maintained comprehensive Storybook documentation with interactive guides and API references
+- Co-lead the *React design system library* used across all customer-facing web products spanning multiple repositories
+- Design and build *accessible, reusable components* with full ARIA support, *keyboard navigation*, and *WCAG 2.1 AA* compliance
+- Author *engineering design documents* for complex multi-component systems, defining goals, requirements, and phased rollout plans
+- Led a major *UI library version upgrade* across the codebase, coordinating breaking changes across multiple product teams
+- Drove a codebase-wide migration to standardize icon usage, replacing legacy implementations across all product surfaces
+- Created custom *ESLint rules* to enforce testing and code quality standards across the organization
+- Introduced *browser-based integration testing* for layout-dependent components, improving test reliability
+- Built *developer tooling* including CSS module type generation, *Storybook* documentation, and visual regression testing
+- Help shape the team's *AI-assisted development* workflow, building tooling and rules that accelerate component development and contributor onboarding
 
 #v(4pt)
 
@@ -91,7 +94,7 @@ TypeScript, React, Redux, SASS
 #v(4pt)
 
 #entry("iOS Engineer", "ZipMatch", "Taguig, Philippines", "Nov 2015 – Apr 2016")
-Designed and developed the ZipMatch Pro app
+Designed and developed a real estate app with virtual reality property tours
 
 #v(4pt)
 
@@ -104,11 +107,13 @@ Full Stack Web Engineer; R&D Software Engineer
 #grid(
   columns: (auto, 1fr),
   gutter: 6pt,
-  [*Languages*], [TypeScript, JavaScript, HTML, CSS, Python],
-  [*Frameworks*], [React, React Router 7, Stencil, Storybook, Vitest, Playwright],
-  [*Design Systems*], [Component libraries, Design tokens, CSS Modules, Figma-to-code],
-  [*Infrastructure*], [Nx monorepo, Webpack, Vite, ESLint, GraphQL codegen, CI/CD],
-  [*Practices*], [Accessibility (WCAG 2.1 AA), Responsive design, Visual regression testing, Code review],
+  [*Languages*], [TypeScript, JavaScript, HTML, CSS, Python, Swift, Kotlin],
+  [*Frameworks*], [React, React Router, Redux, Stencil, Aurelia, Apollo GraphQL],
+  [*Testing*], [Vitest, Playwright, Storybook, Chromatic, React Testing Library],
+  [*Design Systems*], [Component libraries, Design tokens, CSS Modules, Figma],
+  [*Build & Infra*], [Nx, Webpack, Vite, pnpm, ESLint, Stylelint, CI/CD],
+  [*Practices*], [Accessibility (WCAG 2.1 AA), Responsive design, Technical writing, Code review],
+  [*AI Tooling*], [Cursor, AI-assisted development workflows, AI agent skill authoring],
 )
 
 // ─── Education ───
