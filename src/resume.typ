@@ -42,12 +42,10 @@
 #align(center)[
   #text(size: 26pt, weight: "bold", tracking: 0.04em)[Antonn Esquivel]
   #v(-2pt)
-  #text(size: 11pt, fill: rgb("#555"))[Developer + Designer]
+  #text(size: 11pt, fill: rgb("#555"))[Front End Engineer · Design Systems]
   #v(4pt)
   #text(size: 9pt, fill: rgb("#666"))[
     #contact-item[Toronto, ON]
-    #h(8pt) | #h(8pt)
-    #contact-item[#link("mailto:your.email@example.com")[your.email\@example.com]]
     #h(8pt) | #h(8pt)
     #contact-item[#link("https://linkedin.com/in/antonn-esquivel")[linkedin.com/in/antonn-esquivel]]
     #h(8pt) | #h(8pt)
@@ -60,29 +58,34 @@
 // ─── Summary ───
 == Summary
 
-Front End Engineer passionate about UI/UX and design systems. Experienced in building scalable component libraries, developer tooling, and accessible interfaces with React, TypeScript, and modern web technologies.
+Front End Engineer with expertise in design systems, component libraries, and developer experience. Builds accessible, scalable UI infrastructure used across large-scale React applications. Passionate about bridging design and engineering through systematic, well-documented component architectures.
 
 // ─── Experience ───
 == Experience
 
-#entry("Senior Software Engineer", "Company Name", "Toronto, ON", "Month Year – Present")
-- Describe your impact, achievements, and technologies used
-- Quantify results where possible (e.g., improved performance by X%, reduced bundle size by Y%)
-- Focus on outcomes, not just responsibilities
+#entry("Software Engineer, Square Web Platform", "Block (Square)", "Toronto, ON", "YEAR – Present") // TODO: update start date
+- Own and develop Market React, Square's React design system library used across all seller-facing web products in the square-web monorepo
+- Led the migration from Stencil Web Components to React, building accessible wrappers with full ARIA support, keyboard navigation, and WCAG 2.1 AA compliance
+- Executed a monorepo-wide icon migration, deprecating legacy shared-ui Icon components and standardizing on MarketIcon across 15+ product domains
+- Introduced Vitest browser mode testing infrastructure for layout-dependent component tests, improving test reliability over JSDOM
+- Built developer tooling including CSS module type declaration generation with CI freshness checks, and authored AI-assisted development rules to accelerate contributor onboarding
+- Maintained comprehensive Storybook documentation with interactive guides, API references, and Chromatic visual regression testing
+- Cleaned up deprecated Storybook packages and test infrastructure, reducing CI overhead
 
 #v(4pt)
 
-#entry("Software Engineer", "Company Name", "City, Province", "Month Year – Month Year")
-- Describe your impact, achievements, and technologies used
-- Mention specific projects, systems, or features you built
-- Highlight collaboration, leadership, or mentorship
+// TODO: add previous roles — update company, title, dates, and bullet points
+#entry("Front End Developer", "Company Name", "City", "YEAR – YEAR")
+- Built responsive web applications with React, TypeScript, and modern CSS
+- Collaborated with designers to implement pixel-perfect UIs from Figma mockups
+- Contributed to CI/CD pipeline improvements and code review processes
 
 #v(4pt)
 
-#entry("Front End Developer", "Company Name", "City, Province", "Month Year – Month Year")
-- Describe your impact, achievements, and technologies used
-- Mention design system contributions, component libraries, or UI improvements
-- Note any performance optimizations or accessibility work
+#entry("Web Developer", "Company Name", "City", "YEAR – YEAR")
+- Developed and maintained full-stack web applications
+- Worked with HTML, CSS, JavaScript, and Python
+- Built internal tools and automated workflows
 
 // ─── Skills ───
 == Skills
@@ -90,26 +93,38 @@ Front End Engineer passionate about UI/UX and design systems. Experienced in bui
 #grid(
   columns: (auto, 1fr),
   gutter: 6pt,
-  [*Languages*], [TypeScript, JavaScript, HTML, CSS],
-  [*Frameworks*], [React, React Router, Stencil, Storybook],
-  [*Design Systems*], [Component libraries, Design tokens, Figma-to-code workflows],
-  [*Tools*], [Git, Nx, Webpack, Vite, ESLint, Vitest, Playwright],
-  [*Practices*], [Accessibility (WCAG), Responsive design, CI/CD, Code review],
+  [*Languages*], [TypeScript, JavaScript, HTML, CSS, Python],
+  [*Frameworks*], [React, React Router 7, Stencil, Storybook, Vitest, Playwright],
+  [*Design Systems*], [Component libraries, Design tokens, CSS Modules, Figma-to-code],
+  [*Infrastructure*], [Nx monorepo, Webpack, Vite, ESLint, GraphQL codegen, CI/CD],
+  [*Practices*], [Accessibility (WCAG 2.1 AA), Responsive design, Visual regression testing, Code review],
 )
 
 // ─── Projects ───
 == Projects
 
-#entry("Design System Component Library", "Open Source", none, "Ongoing")
-- Built and maintained a React component library with comprehensive Storybook documentation
-- Implemented accessibility-first design with WCAG 2.1 AA compliance
+#entry("Market React", "Block (Square)", none, "Production")
+- React design system library wrapping Market Web Components with idiomatic React APIs
+- Ensures accessibility compliance, keyboard navigation, and cross-browser consistency
 
 #v(4pt)
 
-#entry("react-tsx-boilerplate", "Personal", none, link("https://github.com/ton03/react-tsx-boilerplate")[github.com/ton03/react-tsx-boilerplate])
-- Minimal boilerplate for React, Webpack, and TypeScript projects
+#entry("CentRO", "Open Source", none, link("https://github.com/ton03/CentRO")[github.com/ton03/CentRO])
+- Contributed 11,000+ changes to rAthena, an open-source cross-platform MMORPG server
+- Maintained FluxCP, a web-based control panel for game server management
+
+#v(4pt)
+
+#entry("react-tsx-boilerplate", "Open Source", none, link("https://github.com/ton03/react-tsx-boilerplate")[github.com/ton03/react-tsx-boilerplate])
+- Minimal, production-ready boilerplate for React + TypeScript + Webpack projects
+
+#v(4pt)
+
+#entry("stencil-eslint", "Open Source", none, link("https://github.com/nicknisi/stencil-eslint")[github.com/stencil-eslint])
+- ESLint rules specific to Stencil JS projects for enforcing web component best practices
 
 // ─── Education ───
 == Education
 
-#entry("Degree", "University Name", "City, Province", "Year – Year")
+// TODO: update with your degree, school, and dates
+#entry("Degree", "University Name", "City", "Year – Year")
