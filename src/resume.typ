@@ -78,8 +78,8 @@ Front End Engineer with expertise in design systems, component libraries, and de
 
 #v(4pt)
 
-#entry("Front End Engineer", "AspireIQ", "Greater Toronto Area, Canada", "Sep 2019 – Oct 2021")
-TypeScript, React, SASS, Apollo GraphQL, Python
+#entry("Senior Front End Engineer", "AspireIQ", "Greater Toronto Area, Canada", "Sep 2019 – Oct 2021")
+TypeScript, React, SASS, Apollo GraphQL, Python · Owned the *component library*
 
 #v(4pt)
 
@@ -89,7 +89,7 @@ TypeScript, React, Redux, Aurelia, SASS, UI Design
 #v(4pt)
 
 #entry("Front End Web Engineer", "Iress", "Greater Sydney Area, Australia", "Aug 2016 – Oct 2017")
-TypeScript, React, Redux, SASS
+TypeScript, React, Redux, SASS · Owned the *component library*
 
 #v(4pt)
 
