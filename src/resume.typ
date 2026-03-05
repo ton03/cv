@@ -1,7 +1,7 @@
 // ─── Page & Font Setup ───
-#set page(paper: "us-letter", margin: (x: 0.9cm, y: 0.7cm))
+#set page(paper: "a4", margin: (x: 0.9cm, y: 0.7cm))
 #set text(font: "Avenir Next", size: 8.5pt, fill: rgb("#333"))
-#set par(leading: 0.63em)
+#set par(leading: 0.7em)
 #set list(spacing: 0.7em)
 #set document(title: "Antonn Esquivel — Resume", author: "Antonn Esquivel")
 #let accent = rgb("#4a7c91")

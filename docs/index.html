@@ -20,7 +20,7 @@
     header {
       width: 100%;
       max-width: 900px;
-      padding: 2rem 1.5rem 1rem;
+      padding: 1.5rem 1.5rem 0.75rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -79,13 +79,16 @@
     main {
       width: 100%;
       max-width: 900px;
-      padding: 0 1.5rem 2rem;
+      padding: 0 1.5rem 1rem;
       flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .pdf-container {
       width: 100%;
-      height: 82vh;
+      flex: 1;
+      min-height: 70vh;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
@@ -123,7 +126,7 @@
   </header>
   <main>
     <div class="pdf-container">
-      <embed src="resume.pdf" type="application/pdf" />
+      <embed src="resume.pdf#pagemode=none&view=FitH" type="application/pdf" />
     </div>
     <noscript>
       <div class="fallback" style="display:block;">
