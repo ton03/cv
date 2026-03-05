@@ -3,7 +3,7 @@ name: Build & Deploy Resume
 on:
   push:
     branches: [main]
-    paths: ['src/**']
+    paths: ['src/**', 'fonts/**']
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
       - uses: typst-community/setup-typst@v4
 
       - name: Compile resume
-        run: typst compile src/resume.typ docs/resume.pdf
+        run: typst compile --pdf-standard a-2b --font-path fonts/ src/resume.typ docs/resume.pdf
 
       - name: Commit updated PDF
         uses: stefanzweifel/git-auto-commit-action@v5
