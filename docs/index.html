@@ -11,7 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #f0f0f0;
       color: #333;
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -20,12 +20,13 @@
     header {
       width: 100%;
       max-width: 900px;
-      padding: 1.5rem 1.5rem 0.75rem;
+      padding: 1.25rem 1.5rem 0.75rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
+      flex-shrink: 0;
     }
 
     header h1 {
@@ -81,37 +82,26 @@
       max-width: 900px;
       padding: 0 1.5rem 1rem;
       flex: 1;
-      display: flex;
-      flex-direction: column;
+      min-height: 0;
     }
 
     .pdf-container {
       width: 100%;
-      flex: 1;
-      min-height: 70vh;
+      height: 100%;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    .pdf-container embed {
+    .pdf-container iframe {
       width: 100%;
       height: 100%;
       border: none;
     }
 
-    .fallback {
-      display: none;
-      text-align: center;
-      padding: 4rem 2rem;
-      background: #fff;
-      border-radius: 8px;
-    }
-
     @media (max-width: 640px) {
-      header { padding: 1.5rem 1rem 0.75rem; }
-      main { padding: 0 1rem 1.5rem; }
-      .pdf-container { height: 70vh; }
+      header { padding: 1rem 1rem 0.5rem; }
+      main { padding: 0 1rem 1rem; }
     }
   </style>
 </head>
@@ -126,10 +116,10 @@
   </header>
   <main>
     <div class="pdf-container">
-      <embed src="resume.pdf#pagemode=none&view=FitH" type="application/pdf" />
+      <iframe src="resume.pdf#pagemode=none&view=FitH" title="Resume"></iframe>
     </div>
     <noscript>
-      <div class="fallback" style="display:block;">
+      <div style="text-align:center; padding:4rem 2rem;">
         <p>PDF preview requires a modern browser.</p>
         <p><a href="resume.pdf" download>Download the resume as PDF</a></p>
       </div>
