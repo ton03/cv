@@ -10,7 +10,11 @@ Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@g
 
 ## Summary
 
-Design-oriented Front-End Engineer with 12+ years of experience building design systems at scale. Co-leads Market, Square's React component library, serving multiple product teams and repositories. Bridges design and engineering with deep expertise in accessibility, component architecture, and developer tooling.
+Front-end engineer with 12 years of experience, almost all of it spent on design systems, the shared component libraries product teams build on. Leads Market, Square's React component library, and owns the migration of every Square web product surface onto it, increasingly by handing the mechanical work to AI agents. Holds a high bar for UI correctness: design fidelity, semantics, accessibility, and how it actually feels to use.
+
+## Currently
+
+Deep in AI-assisted engineering right now: building and sharing the agent workflows and guardrails that help the team ship design-system work faster.
 
 ## Skills
 
@@ -18,39 +22,40 @@ Design-oriented Front-End Engineer with 12+ years of experience building design 
 
 **Frameworks & Libraries:** React, React Router, Redux, Stencil, Apollo GraphQL
 
-**Design Systems:** Component libraries, Design tokens, Accessibility
+**Design Systems:** Component libraries, Design tokens, Theming, Accessibility
 
-**Design:** Figma, Photoshop, Illustrator, UI/UX, Responsive design
+**AI & Tooling:** Claude Code, Codex, Amp, Cursor, Agent skill authoring
 
-**Testing:** Vitest, Playwright, Cypress, Storybook, Chromatic, React Testing Library
+**Testing:** Vitest, Playwright, Cypress, Storybook, Visual regression, RTL
 
-**Build & Infra:** Nx, Webpack, Vite, ESLint, Stylelint, CI/CD
+**Build & Infra:** Nx, Vite, ESLint, Stylelint, CI/CD
 
-**AI & Tools:** Cursor, Claude Code, Amp, Codex, Agent skill authoring
+**Practices:** Design fidelity, Accessibility, UX
+
+**Design:** Figma, Photoshop, Illustrator · Web, product & graphic design
 
 ## Experience
 
 ### Staff Front-End Engineer — Block (Square)
 
-Toronto, Ontario, Canada · Remote · Oct 2021 – Present
+Toronto, Canada · Remote · Oct 2021 – Present
 
-- Co-lead **Market**, the **React design system library** — 55+ components serving 25+ product domains across multiple repositories
-- Develop **accessible components** with ARIA support, keyboard navigation, and WCAG 2.1 AA compliance, working closely with design teams
-- Author **design and strategy documents** — component architecture, migration plans, and technical comparisons that shape the team's direction
-- Drive the migration from Web Components to React — previously supported Ember and other frameworks via Web Components
-- Architect the **icon infrastructure** end-to-end — Figma to SVGs to tree-shakable React components — and migrate all legacy icon usage across the codebase
-- Write custom **ESLint rules** based on company needs to enforce standardization, best practices, and code quality across the organization
-- Build **developer tooling** — Chromatic visual regression infrastructure, standardized Storybook configuration, component guidelines, usage patterns, and migration guides
-- Provide educational code reviews and collaborate cross-team — 400+ reviews with a 2:1 review-to-PR ratio
+- Lead Market development and own the React migration across every Square web product surface, moving off legacy Stencil incrementally while keeping it compatible for the products built on it
+- Built the AI-assisted migration workflow the team runs on: agents do the mechanical conversions and test updates, engineers review the API choices and edge cases
+- Replaced a five-figure-a-month visual-testing vendor with a self-hosted system at a fraction of the cost, and made it the check that keeps agent-written PRs reviewable, with agents verifying their own changes in staging
+- Authored Market's complex components (selects, filters, cards), and now pulling their behavior into headless primitives so rendering is swappable: React today, server-driven UI (SDUI) next
+- On Square Web Platform, own the shared UI foundations every web team builds on: component APIs, migration guardrails, and the CI checks that keep product work moving
+- Partner with design on the UI/UX calls, carrying their intent into the component APIs, states, and accessibility where it usually gets lost
+- Rebuilt the icon system end-to-end, from Figma to tree-shakable React, and moved every legacy icon onto it
 
 > TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint
 
 ### Senior Front-End Engineer — Aspire (aspireiq.com)
 
-Toronto, Ontario, Canada · Remote · Sep 2019 – Oct 2021
+Toronto, Canada · Remote · Sep 2019 – Oct 2021
 
-- Built components for an influencer marketing CRM platform, working closely with designers
-- Main contributor to the component library and built metrics UI with data visualizations
+- A primary engineer behind Aspire's component library, the foundation its influencer-marketing platform was built on
+- Built the platform's metrics and data-visualization UI
 
 > TypeScript, React, SASS, Apollo GraphQL, D3, Python
 
@@ -58,8 +63,8 @@ Toronto, Ontario, Canada · Remote · Sep 2019 – Oct 2021
 
 Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
 
-- Built UI components for fintech products, collaborating closely with design teams
-- Initial contributor to the company's shared component library for wealth management and financial planning products
+- Among the founding engineers on Iress's shared component library for wealth-management products, setting the patterns other teams built on for years
+- Overhauled product UIs to bring several wealth-management products onto the new library
 
 > TypeScript, React, Redux, SASS, UI Design
 
@@ -67,7 +72,7 @@ Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
 
 Manila, Philippines · Nov 2015 – Apr 2016
 
-- Designed and developed an iOS app for real estate with virtual reality property tours
+- Designed and developed an iOS real-estate app with virtual-reality property tours
 
 > Swift, iOS, UI Design
 
@@ -75,8 +80,7 @@ Manila, Philippines · Nov 2015 – Apr 2016
 
 Manila, Philippines · Jul 2013 – Oct 2015
 
-- Built internal web applications with React
-- Configured Jenkins CI pipelines, wrote Python automation scripts, and managed build infrastructure
+- Built internal web apps in React; set up Jenkins CI pipelines and Python build-automation scripts
 
 > HTML, CSS, JavaScript, React, Python
 
