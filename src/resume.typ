@@ -106,7 +106,7 @@
       [Designed and built the AI-assisted migration system the team runs on: a migration index, component parity tracker, and repo-wide ESLint rules that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, lifting migration volume to roughly 1.7× the prior four years combined],
       [Built a self-hosted visual-regression system, favored over a \~\$100K/yr SaaS subscription, that scales with AI-era PR volume at a fraction of the cost],
       [Act as the design system's gatekeeper for API shape, semantics, accessibility, and tokens, steering other engineers' contributions and partnering with design to carry their intent into states, interaction, and finished detail],
-      [Authored the library's most complex components (selects, filters, tables), now factoring their behavior and composition into separate layers so each evolves independently: behavior can wrap a library like TanStack or in-house logic, composition can target a custom design system or a kit like shadcn],
+      [Authored the library's most complex components (selects, filters, tables), now factoring their behavior and composition into separate layers so each evolves independently: behavior can wrap a third-party logic library or in-house code, composition can target a custom design system or an off-the-shelf kit],
       [Rebuilt the icon system end-to-end, from Figma to tree-shakable React, moved every legacy icon onto it, with ESLint blocking new legacy imports],
     )
     v(2pt)
