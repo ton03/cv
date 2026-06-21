@@ -1,6 +1,6 @@
 # Antonn Esquivel
 
-**Design Systems Engineer**
+**Staff Front-End Engineer · Design Systems & Web Platform**
 
 Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@gmail.com) · [LinkedIn](https://linkedin.com/in/antonn-esquivel) · [GitHub](https://github.com/ton03)
 
@@ -10,83 +10,73 @@ Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@g
 
 ## Summary
 
-Front-end engineer with 12 years of experience, almost all of it spent on design systems, the shared component libraries product teams build on. Leads Market, Square's React component library, and owns the migration of every Square web product surface onto it, increasingly by handing the mechanical work to AI agents. Holds a high bar for UI correctness: design fidelity, semantics, accessibility, and how it actually feels to use.
+Front-end engineer, 12 years, most of it on design systems: the shared component libraries product teams rely on. The throughline: build the library a company stands on, then close the gap between it existing and being used correctly everywhere. Leads development of Market, Square's React component library, and the company-wide migration onto it. Holds a high bar for UI correctness across design fidelity, semantics, accessibility, and how it feels to use.
 
 ## Currently
 
-Deep in AI-assisted engineering right now: building and sharing the agent workflows and guardrails that help the team ship design-system work faster.
+Focused on making AI a dependable contributor to a production design system: pushing how much real component and migration work agents can carry while quality holds.
 
 ## Skills
 
 **Languages:** TypeScript, JavaScript, Python
 
-**Frameworks & Libraries:** React, React Router, Redux, Stencil, Apollo GraphQL
+**Frameworks & Libraries:** React, React Router, Stencil
 
-**Design Systems:** Component libraries, Design tokens, Theming, Accessibility
+**Design Systems:** Component libraries, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)
 
-**AI & Tooling:** Claude Code, Codex, Amp, Cursor, Agent skill authoring
+**AI Engineering:** Agent skills & rules authoring, MCP integration, agent-assisted migration · Claude Code, Codex, Amp, Cursor
 
 **Testing:** Vitest, Playwright, Cypress, Storybook, Visual regression, RTL
 
-**Build & Infra:** Nx, Vite, ESLint, Stylelint, CI/CD
+**Build & Infra:** Nx, Vite, ESLint, Stylelint, CI/CD, SSR, Terraform
 
-**Practices:** Design fidelity, Accessibility, UX
-
-**Design:** Figma, Photoshop, Illustrator · Web, product & graphic design
+**Design:** Figma, Photoshop, Illustrator · Web, product & graphic design · Design-to-code with Claude
 
 ## Experience
 
-### Staff Front-End Engineer — Block (Square)
+### Staff Front-End Engineer · Block (Square)
 
 Toronto, Canada · Remote · Oct 2021 – Present
 
-- Lead Market development and own the React migration across every Square web product surface, moving off legacy Stencil incrementally while keeping it compatible for the products built on it
-- Built the AI-assisted migration workflow the team runs on: agents do the mechanical conversions and test updates, engineers review the API choices and edge cases
-- Replaced a five-figure-a-month visual-testing vendor with a self-hosted system at a fraction of the cost, and made it the check that keeps agent-written PRs reviewable, with agents verifying their own changes in staging
-- Authored Market's complex components (selects, filters, cards), and now pulling their behavior into headless primitives so rendering is swappable: React today, server-driven UI (SDUI) next
-- On Square Web Platform, own the shared UI foundations every web team builds on: component APIs, migration guardrails, and the CI checks that keep product work moving
-- Partner with design on the UI/UX calls, carrying their intent into the component APIs, states, and accessibility where it usually gets lost
-- Rebuilt the icon system end-to-end, from Figma to tree-shakable React, and moved every legacy icon onto it
+- Own the monorepo-wide migration of every Square web surface onto Market, driving the remaining ~2,400 legacy-importing files toward zero, incrementally and without breaking the products that depend on it
+- Designed and built the AI-assisted migration system the team runs on: a migration index, component parity tracker, and repo-wide ESLint rules that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, lifting migration volume to roughly 1.7× the prior four years combined
+- Built a self-hosted visual-regression system, favored over a ~$100K/yr SaaS subscription, that scales with AI-era PR volume at a fraction of the cost
+- Act as the design system's gatekeeper for API shape, semantics, accessibility, and tokens, steering other engineers' contributions and partnering with design to carry their intent into states, interaction, and finished detail
+- Authored the library's most complex components (selects, filters, tables), now factoring their behavior and composition into separate layers so each evolves independently: behavior can wrap a library like TanStack or in-house logic, composition can target a custom design system or a kit like shadcn
+- Rebuilt the icon system end-to-end, from Figma to tree-shakable React, moved every legacy icon onto it, with ESLint blocking new legacy imports
 
-> TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint
+> TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint, Terraform
 
-### Senior Front-End Engineer — Aspire (aspireiq.com)
+### Senior Front-End Engineer · Aspire (aspireiq.com)
 
 Toronto, Canada · Remote · Sep 2019 – Oct 2021
 
-- A primary engineer behind Aspire's component library, the foundation its influencer-marketing platform was built on
+- Core engineer on the component library behind Aspire's influencer-marketing platform
 - Built the platform's metrics and data-visualization UI
 
-> TypeScript, React, SASS, Apollo GraphQL, D3, Python
+> TypeScript, React, SASS, D3, Python
 
-### Front-End Engineer — Iress (iress.com)
+### Front-End Engineer · Iress (iress.com)
 
 Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
 
-- Among the founding engineers on Iress's shared component library for wealth-management products, setting the patterns other teams built on for years
+- One of the founding engineers on Iress's shared component library for wealth-management products, setting patterns other teams reused for years
 - Overhauled product UIs to bring several wealth-management products onto the new library
 
-> TypeScript, React, Redux, SASS, UI Design
+> TypeScript, React, SASS, UI Design
 
-### iOS Engineer — ZipMatch
+### Earlier · ZipMatch · Nokia Networks
 
-Manila, Philippines · Nov 2015 – Apr 2016
+Manila, Philippines · 2013 – 2016
 
-- Designed and developed an iOS real-estate app with virtual-reality property tours
+- ZipMatch (2015–16): iOS real-estate app with virtual-reality property tours
+- Nokia Networks (2013–15): internal web tooling, with shell and Python scripts for build automation and continuous integration
 
-> Swift, iOS, UI Design
-
-### Software Engineer — Nokia Networks
-
-Manila, Philippines · Jul 2013 – Oct 2015
-
-- Built internal web apps in React; set up Jenkins CI pipelines and Python build-automation scripts
-
-> HTML, CSS, JavaScript, React, Python
+> Swift, iOS, JavaScript, Python, CI/CD
 
 ## Education
 
-**BS Computer Science** — De La Salle University, Manila, Philippines · 2013
+**BS Computer Science** · De La Salle University, Manila, Philippines · 2013
 
 ---
 
@@ -95,9 +85,9 @@ Manila, Philippines · Jul 2013 – Oct 2015
 
 ### Stack
 
-- **[Typst](https://typst.app)** — Modern typesetting for clean, ATS-friendly PDFs
-- **GitHub Actions** — Auto-compiles on push
-- **GitHub Pages** — Hosted from `docs/`
+- **[Typst](https://typst.app)**: Modern typesetting for clean, ATS-friendly PDFs
+- **GitHub Actions**: Auto-compiles on push
+- **GitHub Pages**: Hosted from `docs/`
 
 ### Local development
 
@@ -107,7 +97,7 @@ Edit `src/resume.typ` and compile locally:
 typst compile src/resume.typ docs/resume.pdf
 ```
 
-Or just push — the GitHub Action will compile and commit the PDF automatically.
+Or just push, and the GitHub Action will compile and commit the PDF automatically.
 
 ### Structure
 
