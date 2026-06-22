@@ -3,12 +3,12 @@
 #let body-size = 8.3pt
 #let left-size = 8.5pt   // left rail runs a touch larger to balance the columns
 #let lead = 0.58em
-#let list-gap = 0.82em   // space BETWEEN bullets (kept well above `lead` so items separate clearly)
+#let list-gap = 1em      // space BETWEEN experience bullets
 #let sec-gap = 9pt      // space before a section block
 #let job-gap = 4pt      // space between jobs
 
 // ─── Page & Font Setup ───
-#set page(paper: "a4", margin: (x: 0.85cm, y: 0.62cm))
+#set page(paper: "a4", margin: (x: 0.85cm, top: 1.0cm, bottom: 0.62cm))
 #set text(font: body-font, size: body-size, fill: rgb("#333"))
 #set par(leading: lead, justify: false)
 #set list(tight: false, spacing: list-gap, marker: text(fill: rgb("#9bb7c2"))[•], body-indent: 5pt, indent: 1pt)
@@ -29,13 +29,30 @@
 #let entry(title, org, location, dates) = {
   [*#title* #h(8pt) #text(fill: rgb("#888"), size: 7.8pt)[#dates]]
   v(0.5pt)
-  [#text(fill: rgb("#666"))[#org] #h(7pt) #text(fill: rgb("#999"), size: 7.8pt)[#location]]
+  if org == "" {
+    [#text(fill: rgb("#999"), size: 7.8pt)[#location]]
+  } else {
+    [#text(fill: rgb("#666"))[#org] #h(7pt) #text(fill: rgb("#999"), size: 7.8pt)[#location]]
+  }
 }
 
 #let tech(body) = text(fill: rgb("#9a9a9a"), size: 7.8pt, style: "italic")[#body]
 
 #let skill-row(label, items) = {
   [*#label*:#h(4pt)#text(fill: rgb("#555"), size: 8.8pt)[#items]]
+}
+
+#let sidebar-block(body) = {
+  set text(size: left-size)
+  set par(leading: 0.72em)
+  body
+}
+
+#let sidebar-section(body) = {
+  sidebar-block({
+    v(11pt)
+    body
+  })
 }
 
 // ─── Header ───
@@ -62,55 +79,39 @@
   columns: (0.36fr, 0.64fr),
   column-gutter: 15pt,
 
-  // ═══════════════════════ LEFT COLUMN ═══════════════════════
-  {
-    set text(size: left-size)
-    set par(leading: 0.72em)
+  // The grid cells are positioned explicitly so source/PDF tag order stays
+  // close to single-column resume order while the rendered page remains two-column.
+  grid.cell(x: 0, y: 0, {
+    sidebar-block({
     sec("Summary")
-    [Front-end engineer, 12 years, most of it on design systems: the shared component libraries product teams rely on. The throughline: build the library a company stands on, then close the gap between it existing and being used correctly everywhere. Leads development of Market, Square's React component library, and the company-wide migration onto it. Holds a high bar for UI correctness across design fidelity, semantics, accessibility, and how it feels to use.]
+    [Front-end engineer with 12 years of experience, most of it on design systems: the shared component libraries product teams rely on. Builds the platform, then drives the adoption work that makes it useful across real products. Leads development of Market, Square's React component library, and the company-wide migration onto it. Drives UI and UX consistency across products, with close attention to design fidelity, semantics, accessibility, and interaction detail.]
+    })
+  }),
 
+  grid.cell(x: 0, y: 1, {
+    sidebar-section({
     sec("Currently")
-    [Focused on making AI a dependable contributor to a production design system: pushing how much real component and migration work agents can carry while quality holds.]
-
-    sec("Skills")
-    skill-row("Languages", "TypeScript, JavaScript, Python")
-    v(5pt)
-    skill-row("Frameworks & Libraries", "React, React Router, Stencil")
-    v(5pt)
-    skill-row("Design Systems", "Component libraries, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)")
-    v(5pt)
-    skill-row("AI Engineering", "Agent skills & rules authoring, MCP integration, agent-assisted migration · Claude Code, Codex, Amp, Cursor")
-    v(5pt)
-    skill-row("Testing", "Vitest, Playwright, Cypress, Storybook, Visual regression, RTL")
-    v(5pt)
-    skill-row("Build & Infra", "Nx, Vite, ESLint, Stylelint, CI/CD, SSR, Terraform")
-    v(5pt)
-    skill-row("Design", "Figma, Photoshop, Illustrator · Web, product & graphic design · Design-to-code with Claude")
-
-    sec("Education")
-    [*BS Computer Science*]
-    linebreak()
-    text(fill: rgb("#666"))[De La Salle University]
-    linebreak()
-    text(fill: rgb("#999"), size: 7.8pt)[Manila, Philippines · 2013]
-  },
+    [Making agents useful in production design system work: automating repetitive migrations while engineers own product judgment, APIs, accessibility, and quality.]
+    })
+  }),
 
   // ═══════════════════════ RIGHT COLUMN ═══════════════════════
-  {
+  grid.cell(x: 1, y: 0, rowspan: 4, {
     sec("Experience")
 
     entry("Staff Front-End Engineer", "Block (Square)", "Toronto, Canada · Remote", "Oct 2021 – Present")
     v(2pt)
     list(
-      [Own the monorepo-wide migration of every Square web surface onto Market, driving the remaining \~2,400 legacy-importing files toward zero, incrementally and without breaking the products that depend on it],
-      [Designed and built the AI-assisted migration system the team runs on: a migration index, component parity tracker, and repo-wide ESLint rules that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, lifting migration volume to roughly 1.7× the prior four years combined],
-      [Built a self-hosted visual-regression system, favored over a \~\$100K/yr SaaS subscription, that scales with AI-era PR volume at a fraction of the cost],
-      [Act as the design system's gatekeeper for API shape, semantics, accessibility, and tokens, steering other engineers' contributions and partnering with design to carry their intent into states, interaction, and finished detail],
-      [Authored the library's most complex components (selects, filters, tables), now separating their behavior layer from their composition layer so each evolves independently: the behavior layer can wrap a third-party logic library or in-house code, the composition layer can target a custom design system or an off-the-shelf kit],
-      [Rebuilt the icon system end-to-end, from Figma to tree-shakable React, moved every legacy icon onto it, with ESLint blocking new legacy imports],
+      [Lead Market, Square's React design system, shaping component APIs, accessibility, tokens, and adoption patterns for product teams across Square],
+      [Drive the monorepo-wide migration of Square web surfaces onto Market, reducing thousands of legacy-importing files incrementally and without breaking the products that depend on it],
+      [Designed and built the migration automation system the team runs on: a migration index, component parity tracker, and repo-wide automated checks that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, turning a years-long migration into a repeatable system],
+      [Built a self-hosted visual-regression system, favored over a \~\$100K/yr SaaS subscription, that scales with higher PR volume from migration automation at a fraction of the cost],
+      [Set the implementation bar for design fidelity, semantics, accessibility, and interaction detail, steering other engineers' contributions and partnering with design to carry their intent into finished product states],
+      [Authored the library's most complex components (selects, filters, tables), separating behavior from composition so logic and UI layers can evolve independently],
+      [Rebuilt the icon system end-to-end, from Figma to tree-shakable React, migrated every legacy icon to it, and blocked new legacy imports with automated checks],
     )
     v(2pt)
-    tech[TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint, Terraform]
+    tech[TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint]
 
     v(job-gap); divider; v(job-gap)
 
@@ -118,7 +119,7 @@
     v(1pt)
     list(
       [Core engineer on the component library behind Aspire's influencer-marketing platform],
-      [Built the platform's metrics and data-visualization UI],
+      [Built metrics, data-visualization, and other product features across the influencer-marketing platform],
     )
     v(2pt)
     tech[TypeScript, React, SASS, D3, Python]
@@ -136,13 +137,46 @@
 
     v(job-gap); divider; v(job-gap)
 
-    entry("Earlier", "ZipMatch · Nokia Networks", "Manila, Philippines", "2013 – 2016")
+    [*Earlier* #h(8pt) #text(fill: rgb("#888"), size: 7.8pt)[2013 – 2016]]
     v(1pt)
-    list(
-      [ZipMatch (2015–16): iOS real-estate app with virtual-reality property tours],
-      [Nokia Networks (2013–15): internal web tooling, with shell and Python scripts for build automation and continuous integration],
-    )
+    [*iOS Developer* #h(7pt) #text(fill: rgb("#666"))[ZipMatch] #h(7pt) #text(fill: rgb("#999"), size: 7.8pt)[Manila, Philippines · 2015 – 2016]]
+    v(1pt)
+    list([Built an iOS real-estate app with virtual-reality property tours])
+    v(3pt)
+    [*Software Engineer* #h(7pt) #text(fill: rgb("#666"))[Nokia Networks] #h(7pt) #text(fill: rgb("#999"), size: 7.8pt)[Manila, Philippines · 2013 – 2015]]
+    v(1pt)
+    list([Built internal web tooling, with shell and Python scripts for build automation and continuous integration])
     v(2pt)
     tech[Swift, iOS, JavaScript, Python, CI/CD]
-  },
+  }),
+
+  grid.cell(x: 0, y: 2, {
+    sidebar-section({
+    sec("Skills")
+    skill-row("Languages", "TypeScript, JavaScript, Python")
+    v(5pt)
+    skill-row("Frameworks & Libraries", "React, React Router, Stencil")
+    v(5pt)
+    skill-row("Design Systems", "Component libraries, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)")
+    v(5pt)
+    skill-row("AI-Assisted Workflows", "Agent skills & rules authoring · Claude Code, Codex, Amp, Cursor")
+    v(5pt)
+    skill-row("Testing", "Vitest, Playwright, Cypress, Storybook, Visual regression, React Testing Library")
+    v(5pt)
+    skill-row("Build & Infra", "Nx, Vite, ESLint, Stylelint, CI/CD, SSR")
+    v(5pt)
+    skill-row("Design", "Figma, Photoshop, Illustrator · Web, product & graphic design · Design-to-code with Claude")
+    })
+  }),
+
+  grid.cell(x: 0, y: 3, {
+    sidebar-section({
+    sec("Education")
+    [*BS Computer Science*]
+    linebreak()
+    text(fill: rgb("#666"))[De La Salle University]
+    linebreak()
+    text(fill: rgb("#999"), size: 7.8pt)[Manila, Philippines · 2013]
+    })
+  }),
 )

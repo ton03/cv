@@ -10,11 +10,11 @@ Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@g
 
 ## Summary
 
-Front-end engineer, 12 years, most of it on design systems: the shared component libraries product teams rely on. The throughline: build the library a company stands on, then close the gap between it existing and being used correctly everywhere. Leads development of Market, Square's React component library, and the company-wide migration onto it. Holds a high bar for UI correctness across design fidelity, semantics, accessibility, and how it feels to use.
+Front-end engineer with 12 years of experience, most of it on design systems: the shared component libraries product teams rely on. Builds the platform, then drives the adoption work that makes it useful across real products. Leads development of Market, Square's React component library, and the company-wide migration onto it. Drives UI and UX consistency across products, with close attention to design fidelity, semantics, accessibility, and interaction detail.
 
 ## Currently
 
-Focused on making AI a dependable contributor to a production design system: pushing how much real component and migration work agents can carry while quality holds.
+Making agents useful in production design system work: automating repetitive migrations while engineers own product judgment, APIs, accessibility, and quality.
 
 ## Skills
 
@@ -24,11 +24,11 @@ Focused on making AI a dependable contributor to a production design system: pus
 
 **Design Systems:** Component libraries, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)
 
-**AI Engineering:** Agent skills & rules authoring, MCP integration, agent-assisted migration · Claude Code, Codex, Amp, Cursor
+**AI-Assisted Workflows:** Agent skills & rules authoring · Claude Code, Codex, Amp, Cursor
 
-**Testing:** Vitest, Playwright, Cypress, Storybook, Visual regression, RTL
+**Testing:** Vitest, Playwright, Cypress, Storybook, Visual regression, React Testing Library
 
-**Build & Infra:** Nx, Vite, ESLint, Stylelint, CI/CD, SSR, Terraform
+**Build & Infra:** Nx, Vite, ESLint, Stylelint, CI/CD, SSR
 
 **Design:** Figma, Photoshop, Illustrator · Web, product & graphic design · Design-to-code with Claude
 
@@ -38,21 +38,22 @@ Focused on making AI a dependable contributor to a production design system: pus
 
 Toronto, Canada · Remote · Oct 2021 – Present
 
-- Own the monorepo-wide migration of every Square web surface onto Market, driving the remaining ~2,400 legacy-importing files toward zero, incrementally and without breaking the products that depend on it
-- Designed and built the AI-assisted migration system the team runs on: a migration index, component parity tracker, and repo-wide ESLint rules that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, lifting migration volume to roughly 1.7× the prior four years combined
-- Built a self-hosted visual-regression system, favored over a ~$100K/yr SaaS subscription, that scales with AI-era PR volume at a fraction of the cost
-- Act as the design system's gatekeeper for API shape, semantics, accessibility, and tokens, steering other engineers' contributions and partnering with design to carry their intent into states, interaction, and finished detail
-- Authored the library's most complex components (selects, filters, tables), now separating their behavior layer from their composition layer so each evolves independently: the behavior layer can wrap a third-party logic library or in-house code, the composition layer can target a custom design system or an off-the-shelf kit
-- Rebuilt the icon system end-to-end, from Figma to tree-shakable React, moved every legacy icon onto it, with ESLint blocking new legacy imports
+- Lead Market, Square's React design system, shaping component APIs, accessibility, tokens, and adoption patterns for product teams across Square
+- Drive the monorepo-wide migration of Square web surfaces onto Market, reducing thousands of legacy-importing files incrementally and without breaking the products that depend on it
+- Designed and built the migration automation system the team runs on: a migration index, component parity tracker, and repo-wide automated checks that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, turning a years-long migration into a repeatable system
+- Built a self-hosted visual-regression system, favored over a ~$100K/yr SaaS subscription, that scales with higher PR volume from migration automation at a fraction of the cost
+- Set the implementation bar for design fidelity, semantics, accessibility, and interaction detail, steering other engineers' contributions and partnering with design to carry their intent into finished product states
+- Authored the library's most complex components (selects, filters, tables), separating behavior from composition so logic and UI layers can evolve independently
+- Rebuilt the icon system end-to-end, from Figma to tree-shakable React, migrated every legacy icon to it, and blocked new legacy imports with automated checks
 
-> TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint, Terraform
+> TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint
 
 ### Senior Front-End Engineer · Aspire (aspireiq.com)
 
 Toronto, Canada · Remote · Sep 2019 – Oct 2021
 
 - Core engineer on the component library behind Aspire's influencer-marketing platform
-- Built the platform's metrics and data-visualization UI
+- Built metrics, data-visualization, and other product features across the influencer-marketing platform
 
 > TypeScript, React, SASS, D3, Python
 
@@ -65,12 +66,19 @@ Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
 
 > TypeScript, React, SASS, UI Design
 
-### Earlier · ZipMatch · Nokia Networks
+### Earlier
 
-Manila, Philippines · 2013 – 2016
+#### iOS Developer · ZipMatch
 
-- ZipMatch (2015–16): iOS real-estate app with virtual-reality property tours
-- Nokia Networks (2013–15): internal web tooling, with shell and Python scripts for build automation and continuous integration
+Manila, Philippines · 2015 – 2016
+
+- Built an iOS real-estate app with virtual-reality property tours
+
+#### Software Engineer · Nokia Networks
+
+Manila, Philippines · 2013 – 2015
+
+- Built internal web tooling, with shell and Python scripts for build automation and continuous integration
 
 > Swift, iOS, JavaScript, Python, CI/CD
 
@@ -94,7 +102,7 @@ Manila, Philippines · 2013 – 2016
 Edit `src/resume.typ` and compile locally:
 
 ```bash
-typst compile src/resume.typ docs/resume.pdf
+typst compile --pdf-standard a-2b --font-path fonts --ignore-system-fonts src/resume.typ docs/resume.pdf
 ```
 
 Or just push, and the GitHub Action will compile and commit the PDF automatically.
