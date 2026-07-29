@@ -41,7 +41,7 @@ Toronto, Canada · Remote · Oct 2021 – Present
 - Lead Market, Square's React design system, shaping component APIs, accessibility, tokens, and adoption patterns for product teams across Square
 - Drive the monorepo-wide migration of Square web surfaces onto Market, reducing thousands of legacy-importing files incrementally and without breaking the products that depend on it
 - Designed and built the migration automation system the team runs on: a migration index, component parity tracker, and repo-wide automated checks that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, turning a years-long migration into a repeatable system
-- Built a self-hosted visual-regression system, favored over a ~$100K/yr SaaS subscription, that scales with higher PR volume from migration automation at a fraction of the cost
+- Built a self-hosted visual-regression system, favored over a commercial SaaS subscription, that scales with higher PR volume from migration automation at a fraction of the cost
 - Set the implementation bar for design fidelity, semantics, accessibility, and interaction detail, steering other engineers' contributions and partnering with design to carry their intent into finished product states
 - Authored the library's most complex components (selects, filters, tables), separating behavior from composition so logic and UI layers can evolve independently
 - Rebuilt the icon system end-to-end, from Figma to tree-shakable React, migrated every legacy icon to it, and blocked new legacy imports with automated checks
