@@ -66,15 +66,13 @@ Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
 
 > TypeScript, React, SASS, UI Design
 
-### Earlier
-
-#### iOS Developer · ZipMatch
+### iOS Developer · ZipMatch
 
 Manila, Philippines · 2015 – 2016
 
 - Built an iOS real-estate app with virtual-reality property tours
 
-#### Software Engineer · Nokia Networks
+### Software Engineer · Nokia Networks
 
 Manila, Philippines · 2013 – 2015
 

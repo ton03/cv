@@ -137,8 +137,6 @@
 
     v(job-gap); divider; v(job-gap)
 
-    [*Earlier* #h(8pt) #text(fill: rgb("#888"), size: 7.8pt)[2013 – 2016]]
-    v(1pt)
     [*iOS Developer* #h(7pt) #text(fill: rgb("#666"))[ZipMatch] #h(7pt) #text(fill: rgb("#999"), size: 7.8pt)[Manila, Philippines · 2015 – 2016]]
     v(1pt)
     list([Built an iOS real-estate app with virtual-reality property tours])
