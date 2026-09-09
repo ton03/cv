@@ -4,7 +4,7 @@
 
 Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@gmail.com) · [LinkedIn](https://linkedin.com/in/antonn-esquivel) · [GitHub](https://github.com/ton03)
 
-📄 [View PDF](https://ton03.github.io/cv/) · [Download PDF](https://ton03.github.io/cv/resume.pdf)
+🌐 [View résumé](https://tonn.esq)
 
 ---
 
