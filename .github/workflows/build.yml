@@ -1,9 +1,9 @@
-name: Build & Deploy Resume
+name: Build Resume
 
 on:
   push:
     branches: [main]
-    paths: ['src/**', 'fonts/**']
+    paths: ['resume.typ', 'fonts/**']
 
 permissions:
   contents: write
@@ -17,10 +17,10 @@ jobs:
       - uses: typst-community/setup-typst@v4
 
       - name: Compile resume
-        run: typst compile --pdf-standard a-2b --font-path fonts/ --ignore-system-fonts src/resume.typ docs/resume.pdf
+        run: typst compile --pdf-standard a-2b --font-path fonts/ --ignore-system-fonts resume.typ resume.pdf
 
       - name: Commit updated PDF
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'build: update resume pdf'
-          file_pattern: 'docs/resume.pdf README.md'
+          file_pattern: 'resume.pdf README.md'

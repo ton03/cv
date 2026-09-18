@@ -4,47 +4,47 @@
 
 Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@gmail.com) · [LinkedIn](https://linkedin.com/in/antonn-esquivel) · [GitHub](https://github.com/ton03)
 
-🌐 [View résumé](https://tonn.esq)
+📄 [View résumé PDF](https://github.com/ton03/cv/blob/main/resume.pdf) · 🌐 [tonn.esq](https://tonn.esq)
 
 ---
 
 ## Summary
 
-Front-end engineer with 12 years of experience, most of it on design systems: the shared component libraries product teams rely on. Builds the platform, then drives the adoption work that makes it useful across real products. Leads development of Market, Square's React component library, and the company-wide migration onto it. Drives UI and UX consistency across products, with close attention to design fidelity, semantics, accessibility, and interaction detail.
+Staff front-end engineer focused on design systems and web platforms. Owns Market Web, Square's React design system, across migration, component development, adoption, and support. Builds AI-assisted workflows that delegate repetitive implementation and coordination to agents while engineers and designers retain ownership of APIs, accessibility, visual quality, and product judgment. Works closely with designers to turn intent into consistent, high-fidelity interfaces.
 
 ## Currently
 
-Making agents useful in production design system work: automating repetitive migrations while engineers own product judgment, APIs, accessibility, and quality.
+Builds BlockUI Web, the web side of Block's shared design system for Square and Cash App web products, in close partnership with designers. Builds AI-assisted workflows for Square Web Platform: agents handle repetitive migration and coordination work while engineers and designers own API decisions, accessibility, visual quality, and product judgment.
 
 ## Skills
 
 **Languages:** TypeScript, JavaScript, Python
 
-**Frameworks & Libraries:** React, React Router, Stencil
+**Frameworks & Libraries:** shadcn/ui, Base UI, Next.js, Remix, React, React Router, Stencil, D3, Web Components, Ember
 
 **Design Systems:** Component libraries, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)
 
-**AI-Assisted Workflows:** Agent skills & rules authoring · Claude Code, Codex, Amp, Cursor
+**AI-Assisted Workflows:** Agent skills and rules authoring, Claude Code, Codex, Amp, Cursor
 
-**Testing:** Vitest, Playwright, Cypress, Storybook, Visual regression, React Testing Library
+**Testing:** Vitest, Playwright, Cypress, Storybook, Snapshot testing, Visual regression, React Testing Library
 
-**Build & Infra:** Nx, Vite, ESLint, Stylelint, CI/CD, SSR
+**Build & Infra:** Vite, Nx, Rollup, Webpack, ESLint, Stylelint, CI/CD, SSR
 
-**Design:** Figma, Photoshop, Illustrator · Web, product & graphic design · Design-to-code with Claude
+**Design:** Figma, Photoshop, Illustrator, web, product, and graphic design, design-to-code with Claude
 
 ## Experience
 
-### Staff Front-End Engineer · Block (Square)
+### Staff Front-End Engineer · Square (Block)
 
 Toronto, Canada · Remote · Oct 2021 – Present
 
-- Lead Market, Square's React design system, shaping component APIs, accessibility, tokens, and adoption patterns for product teams across Square
-- Drive the monorepo-wide migration of Square web surfaces onto Market, reducing thousands of legacy-importing files incrementally and without breaking the products that depend on it
-- Designed and built the migration automation system the team runs on: a migration index, component parity tracker, and repo-wide automated checks that gate every change. Agents handle the mechanical conversions while engineers own the API and edge-case calls, turning a years-long migration into a repeatable system
-- Built a self-hosted visual-regression system, favored over a commercial SaaS subscription, that scales with higher PR volume from migration automation at a fraction of the cost
-- Set the implementation bar for design fidelity, semantics, accessibility, and interaction detail, steering other engineers' contributions and partnering with design to carry their intent into finished product states
+- Build BlockUI Web, the web side of Block's shared design system for Square and Cash App web products, in close partnership with designers
+- Own Market Web, Square's React design system and web platform, across migration, component development, adoption, and support
+- Lead the migration from Ember and legacy Web Components to Market's React library, delegating repetitive conversion work to agents while engineers retain ownership of API decisions, edge cases, accessibility, and visual quality
+- Build a self-coordinating agent that opens migration PRs for web teams, assigns reviewers, and improves from code and visual review feedback
+- Standardize web snapshot testing across Block products, dramatically increasing coverage while reducing total infrastructure and storage costs from roughly $20k per month to under $2k
 - Authored the library's most complex components (selects, filters, tables), separating behavior from composition so logic and UI layers can evolve independently
-- Rebuilt the icon system end-to-end, from Figma to tree-shakable React, migrated every legacy icon to it, and blocked new legacy imports with automated checks
+- Set engineering and review standards for Market adoption, aligning API design, accessibility, semantics, and visual fidelity across contributions from multiple web teams
 
 > TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint
 
@@ -61,7 +61,7 @@ Toronto, Canada · Remote · Sep 2019 – Oct 2021
 
 Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
 
-- One of the founding engineers on Iress's shared component library for wealth-management products, setting patterns other teams reused for years
+- Contributed to Iress's shared component library from its early development, helping establish patterns other teams reused for years
 - Overhauled product UIs to bring several wealth-management products onto the new library
 
 > TypeScript, React, SASS, UI Design
@@ -92,15 +92,14 @@ Manila, Philippines · 2013 – 2015
 ### Stack
 
 - **[Typst](https://typst.app)**: Modern typesetting for clean, ATS-friendly PDFs
-- **GitHub Actions**: Auto-compiles on push
-- **GitHub Pages**: Hosted from `docs/`
+- **GitHub Actions**: Auto-compiles `resume.pdf` on source changes
 
 ### Local development
 
-Edit `src/resume.typ` and compile locally:
+Edit `resume.typ` and compile locally:
 
 ```bash
-typst compile --pdf-standard a-2b --font-path fonts --ignore-system-fonts src/resume.typ docs/resume.pdf
+typst compile --pdf-standard a-2b --font-path fonts --ignore-system-fonts resume.typ resume.pdf
 ```
 
 Or just push, and the GitHub Action will compile and commit the PDF automatically.
@@ -108,10 +107,9 @@ Or just push, and the GitHub Action will compile and commit the PDF automaticall
 ### Structure
 
 ```
-src/resume.typ          ← resume source (source of truth)
+resume.typ              ← resume source (source of truth)
 README.md               ← markdown version (kept in sync)
-docs/index.html         ← landing page (GitHub Pages)
-docs/resume.pdf         ← compiled output
+resume.pdf              ← compiled output
 .github/workflows/      ← auto-build on push
 ```
 
