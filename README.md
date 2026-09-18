@@ -2,9 +2,12 @@
 
 **Staff Front-End Engineer  ·  Design Systems & Web Platform**
 
-Toronto, Ontario, Canada  ·  [esquivel.antonn@gmail.com](mailto:esquivel.antonn@gmail.com)  ·  [LinkedIn](https://linkedin.com/in/antonn-esquivel)  ·  [GitHub](https://github.com/ton03)
+Toronto, Ontario, Canada
 
-🌐 [tonn.esq](https://tonn.esq)  ·  📄 [View résumé PDF](https://github.com/ton03/cv/blob/main/resume.pdf)  ·  💼 [LinkedIn](https://linkedin.com/in/antonn-esquivel)
+🌐 [tonn.esq](https://tonn.esq)<br>
+✉️ [hello@tonn.esq](mailto:hello@tonn.esq)<br>
+📄 [View résumé PDF](https://github.com/ton03/cv/blob/main/resume.pdf)<br>
+💼 [LinkedIn](https://linkedin.com/in/antonn-esquivel)
 
 ---
 

@@ -64,11 +64,11 @@
   #text(size: 8pt, fill: rgb("#888"))[
     Toronto, Ontario, Canada
     #h(5pt) · #h(5pt)
-    #link("mailto:esquivel.antonn@gmail.com")[esquivel.antonn\@gmail.com]
+    #link("https://tonn.esq")[tonn.esq]
+    #h(5pt) · #h(5pt)
+    #link("mailto:hello@tonn.esq")[hello\@tonn.esq]
     #h(5pt) · #h(5pt)
     #link("https://linkedin.com/in/antonn-esquivel")[linkedin.com/in/antonn-esquivel]
-    #h(5pt) · #h(5pt)
-    #link("https://github.com/ton03")[github.com/ton03]
   ]
 ]
 
