@@ -91,7 +91,7 @@
   grid.cell(x: 0, y: 1, {
     sidebar-section({
     sec("Currently")
-    [Owns BlockUI Web, Block's web design system for Square and Cash App, across development and support, in close partnership with designers. Builds AI-assisted workflows for Square Web Platform, delegating repetitive migration and coordination work while engineers and designers own API decisions, accessibility, visual quality, and judgment.]
+    [Owns BlockUI Web, Block's web design system for Square and Cash App, and Market Web, Square's React design system, across development, migration, adoption, and support, in close partnership with designers. Builds AI-assisted workflows for Square Web Platform, delegating repetitive work while engineers and designers own API decisions, accessibility, visual quality, and judgment.]
     })
   }),
 
