@@ -23,9 +23,7 @@ Owns BlockUI Web, Block's web design system for Square and Cash App, and Market 
 
 **Languages:** TypeScript, JavaScript, Python
 
-**Frameworks & Libraries:** React, Next.js, Remix, React Router, shadcn/ui, Base UI, Stencil, D3, Web Components, Ember
-
-**WordPress:** PHP, client sites, custom themes
+**Frameworks & Libraries:** React, Next.js, Remix, React Router, WordPress, PHP, shadcn/ui, Base UI, Stencil, D3, Web Components, Ember
 
 **Design Systems:** Component libraries, Icon systems, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)
 
