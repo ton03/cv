@@ -37,7 +37,7 @@ Owns BlockUI Web, Block's web design system for Square and Cash App, across deve
 
 ## Experience
 
-### Staff Front-End Engineer  ·  Square (Block)
+### Staff Front-End Engineer  ·  Square ([Block](https://block.xyz))
 
 Toronto, Canada  ·  Remote  ·  Oct 2021 – Present
 
@@ -51,7 +51,7 @@ Toronto, Canada  ·  Remote  ·  Oct 2021 – Present
 
 > TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint
 
-### Senior Front-End Engineer  ·  Aspire (aspireiq.com)
+### Senior Front-End Engineer  ·  Aspire ([aspireiq.com](https://aspireiq.com))
 
 Toronto, Canada  ·  Remote  ·  Sep 2019 – Oct 2021
 
@@ -60,7 +60,7 @@ Toronto, Canada  ·  Remote  ·  Sep 2019 – Oct 2021
 
 > TypeScript, React, SASS, D3, Python
 
-### Front-End Engineer  ·  Iress (iress.com)
+### Front-End Engineer  ·  Iress ([iress.com](https://iress.com))
 
 Sydney & Melbourne, Australia  ·  Aug 2016 – Aug 2019
 
