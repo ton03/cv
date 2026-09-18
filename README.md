@@ -1,10 +1,10 @@
 # Antonn Esquivel
 
-**Staff Front-End Engineer · Design Systems & Web Platform**
+**Staff Front-End Engineer  ·  Design Systems & Web Platform**
 
-Toronto, Ontario, Canada · [esquivel.antonn@gmail.com](mailto:esquivel.antonn@gmail.com) · [LinkedIn](https://linkedin.com/in/antonn-esquivel) · [GitHub](https://github.com/ton03)
+Toronto, Ontario, Canada  ·  [esquivel.antonn@gmail.com](mailto:esquivel.antonn@gmail.com)  ·  [LinkedIn](https://linkedin.com/in/antonn-esquivel)  ·  [GitHub](https://github.com/ton03)
 
-📄 [View résumé PDF](https://github.com/ton03/cv/blob/main/resume.pdf) · 🌐 [tonn.esq](https://tonn.esq)
+🌐 [tonn.esq](https://tonn.esq)  ·  📄 [View résumé PDF](https://github.com/ton03/cv/blob/main/resume.pdf)  ·  💼 [LinkedIn](https://linkedin.com/in/antonn-esquivel)
 
 ---
 
@@ -20,9 +20,9 @@ Builds BlockUI Web, the web side of Block's shared design system for Square and 
 
 **Languages:** TypeScript, JavaScript, Python
 
-**Frameworks & Libraries:** shadcn/ui, Base UI, Next.js, Remix, React, React Router, Stencil, D3, Web Components, Ember
+**Frameworks & Libraries:** React, Next.js, Remix, React Router, shadcn/ui, Base UI, Stencil, D3, Web Components, Ember
 
-**Design Systems:** Component libraries, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)
+**Design Systems:** Component libraries, Icon systems, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)
 
 **AI-Assisted Workflows:** Agent skills and rules authoring, Claude Code, Codex, Amp, Cursor
 
@@ -34,9 +34,9 @@ Builds BlockUI Web, the web side of Block's shared design system for Square and 
 
 ## Experience
 
-### Staff Front-End Engineer · Square (Block)
+### Staff Front-End Engineer  ·  Square (Block)
 
-Toronto, Canada · Remote · Oct 2021 – Present
+Toronto, Canada  ·  Remote  ·  Oct 2021 – Present
 
 - Build BlockUI Web, the web side of Block's shared design system for Square and Cash App web products, in close partnership with designers
 - Own Market Web, Square's React design system and web platform, across migration, component development, adoption, and support
@@ -48,33 +48,33 @@ Toronto, Canada · Remote · Oct 2021 – Present
 
 > TypeScript, React, CSS Modules, Stencil, Storybook, Vitest, Playwright, Nx, ESLint
 
-### Senior Front-End Engineer · Aspire (aspireiq.com)
+### Senior Front-End Engineer  ·  Aspire (aspireiq.com)
 
-Toronto, Canada · Remote · Sep 2019 – Oct 2021
+Toronto, Canada  ·  Remote  ·  Sep 2019 – Oct 2021
 
 - Core engineer on the component library behind Aspire's influencer-marketing platform
 - Built metrics, data-visualization, and other product features across the influencer-marketing platform
 
 > TypeScript, React, SASS, D3, Python
 
-### Front-End Engineer · Iress (iress.com)
+### Front-End Engineer  ·  Iress (iress.com)
 
-Sydney & Melbourne, Australia · Aug 2016 – Aug 2019
+Sydney & Melbourne, Australia  ·  Aug 2016 – Aug 2019
 
 - Contributed to Iress's shared component library from its early development, helping establish patterns other teams reused for years
 - Overhauled product UIs to bring several wealth-management products onto the new library
 
 > TypeScript, React, SASS, UI Design
 
-### iOS Developer · ZipMatch
+### iOS Developer  ·  ZipMatch
 
-Manila, Philippines · 2015 – 2016
+Manila, Philippines  ·  2015 – 2016
 
 - Built an iOS real-estate app with virtual-reality property tours
 
-### Software Engineer · Nokia Networks
+### Software Engineer  ·  Nokia Networks
 
-Manila, Philippines · 2013 – 2015
+Manila, Philippines  ·  2013 – 2015
 
 - Built internal web tooling, with shell and Python scripts for build automation and continuous integration
 
@@ -82,7 +82,7 @@ Manila, Philippines · 2013 – 2015
 
 ## Education
 
-**BS Computer Science** · De La Salle University, Manila, Philippines · 2013
+**BS Computer Science**  ·  De La Salle University, Manila, Philippines  ·  2013
 
 ---
 
