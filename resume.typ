@@ -84,14 +84,14 @@
   grid.cell(x: 0, y: 0, {
     sidebar-block({
     sec("Summary")
-    [Staff front-end engineer focused on design systems and web platforms. Owns Market Web, Square's React design system, across migration, component development, adoption, and support. Builds AI-assisted workflows that delegate repetitive implementation and coordination to agents while engineers and designers retain ownership of APIs, accessibility, visual quality, and product judgment. Works closely with designers to turn intent into consistent, high-fidelity interfaces.]
+    [Staff front-end engineer focused on design systems and web platforms. Owns BlockUI Web, Block's web design system for Square and Cash App, and Market Web, Square's React design system, across development, migration, adoption, and support. Builds AI-assisted workflows that delegate repetitive work while engineers and designers retain ownership of APIs, accessibility, visual quality, and judgment. Works closely with designers to turn intent into consistent interfaces.]
     })
   }),
 
   grid.cell(x: 0, y: 1, {
     sidebar-section({
     sec("Currently")
-    [Builds BlockUI Web, the web side of Block's shared design system for Square and Cash App web products, in close partnership with designers. Builds AI-assisted workflows for Square Web Platform: agents handle repetitive migration and coordination work while engineers and designers own API decisions, accessibility, visual quality, and product judgment.]
+    [Owns BlockUI Web, Block's web design system for Square and Cash App, across development and support, in close partnership with designers. Builds AI-assisted workflows for Square Web Platform, delegating repetitive migration and coordination work while engineers and designers own API decisions, accessibility, visual quality, and judgment.]
     })
   }),
 
@@ -102,12 +102,12 @@
     entry("Staff Front-End Engineer", "Square (Block)", "Toronto, Canada · Remote", "Oct 2021 – Present")
     v(2pt)
     list(
-      [Build BlockUI Web, the web side of Block's shared design system for Square and Cash App web products, in close partnership with designers],
+      [Own BlockUI Web, Block's web design system for Square and Cash App web products, across platform development, component delivery, adoption, and support, in close partnership with designers],
       [Own Market Web, Square's React design system and web platform, across migration, component development, adoption, and support],
       [Lead the migration from Ember and legacy Web Components to Market's React library, delegating repetitive conversion work to agents while engineers retain ownership of API decisions, edge cases, accessibility, and visual quality],
       [Build a self-coordinating agent that opens migration PRs for web teams, assigns reviewers, and improves from code and visual review feedback],
       [Standardize web snapshot testing across Block products, dramatically increasing coverage while reducing total infrastructure and storage costs from roughly \$20k per month to under \$2k],
-      [Authored the library's most complex components (selects, filters, tables), separating behavior from composition so logic and UI layers can evolve independently],
+      [Author some of the library's most complex components, separating behavior from composition so logic and UI layers can evolve independently],
       [Set engineering and review standards for Market adoption, aligning API design, accessibility, semantics, and visual fidelity across contributions from multiple web teams],
     )
     v(2pt)
