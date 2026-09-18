@@ -50,7 +50,7 @@
 
 #let sidebar-section(body) = {
   sidebar-block({
-    v(11pt)
+    v(6pt)
     body
   })
 }
@@ -152,17 +152,19 @@
     sidebar-section({
     sec("Skills")
     skill-row("Languages", "TypeScript, JavaScript, Python")
-    v(5pt)
+    v(4pt)
     skill-row("Frameworks & Libraries", "React, Next.js, Remix, React Router, shadcn/ui, Base UI, Stencil, D3, Web Components, Ember")
-    v(5pt)
+    v(4pt)
+    skill-row("WordPress", "PHP, client sites, custom themes")
+    v(4pt)
     skill-row("Design Systems", "Component libraries, Icon systems, Design tokens, Theming, CSS architecture, Web Components, Headless primitives, Accessibility (WCAG, ARIA)")
-    v(5pt)
+    v(4pt)
     skill-row("AI-Assisted Workflows", "Agent skills and rules authoring, Claude Code, Codex, Amp, Cursor")
-    v(5pt)
+    v(4pt)
     skill-row("Testing", "Vitest, Playwright, Cypress, Storybook, Snapshot testing, Visual regression, React Testing Library")
-    v(5pt)
+    v(4pt)
     skill-row("Build & Infra", "Vite, Nx, Rollup, Webpack, ESLint, Stylelint, CI/CD, SSR")
-    v(5pt)
+    v(4pt)
     skill-row("Design", "Figma, Photoshop, Illustrator, web, product, and graphic design, design-to-code with Claude")
     })
   }),
